@@ -2,11 +2,11 @@ package com.walmart.ticketservice.dao;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -22,7 +22,7 @@ public abstract class AbstractDAO {
 
     private final AtomicInteger availableSeatsCount = new AtomicInteger();
 
-    private final Map<Integer, Pair<String, List<String>>> blockedSeats = new HashMap<>();
+    private final Map<Integer, Pair<String, List<String>>> blockedSeats = new ConcurrentHashMap<>();
 
     private final Random random = new Random();
 
