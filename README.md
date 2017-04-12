@@ -38,11 +38,12 @@
 # Design and Build 
 
     1. Validation implemented using JSR 303
-    2. ScheduledExecutorService implemented to validate the time out and release the blocked tickets
-    3. Atomic way of implementation to retrieve available seats and block seats
-    4. Integration Testing automated using Cucumber+Retrofit+Assertions
-    5. To execute the integration testing, use the below command -> mvn test -Dcucumber=true -Dhost=http://localhost:8080 (With this code, the test cases can be validated against any environment. Test cases are limited just to showcase as POC)
-    6. Integration Test execution can be plugged to CICD and report can be generated on top of that to verify the breaks.
+    2. Authorized users to limited to abc1@gmail.com - abc15@gmail.com (15 users)
+    3. ScheduledExecutorService implemented to validate the time out and release the blocked tickets
+    4. Atomic way of implementation to retrieve available seats and block seats
+    5. Integration Testing automated using Cucumber+Retrofit+Assertions
+    6. To execute the integration testing, use the below command -> mvn test -Dcucumber=true -Dhost=http://localhost:8080 (With this code, the test cases can be validated against any environment. Test cases are limited just to showcase as POC)
+    7. Integration Test execution can be plugged to CICD and report can be generated on top of that to verify the breaks.
 
 # Test Results 
 
