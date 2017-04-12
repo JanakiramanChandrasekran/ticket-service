@@ -1,0 +1,666 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# encoding: UTF-8"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Integration test cases to validate the ticket service with invalid requests",
+        "description": "",
+        "id": "ticket-service-available-seats-function;integration-test-cases-to-validate-the-ticket-service-with-invalid-requests;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 118504449,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a Consumer of Ticket Service is making a call to test scenario \"Retrieve Available Seats\" to retrieve available seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Retrieve Available Seats",
+                  "offset": 64
+                }
+              ],
+              "location": "AvailableSeatsStepDefinitions.a_Consumer_of_Ticket_Service_is_making_a_call_to_test_scenario_to_retrieve_available_seats(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 151836066,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "ticket service returns only status code of \"200\" to retrieve available seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "AvailableSeatsStepDefinitions.ticket_service_returns_only_status_code_of_to_retrieve_available_seats(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ticket-service-available-seats-function",
+    "description": "",
+    "id": "ticket-service-available-seats-function",
+    "keyword": "Feature",
+    "uri": "src/test/resources/ticket-service-available-seats-function.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# encoding: UTF-8"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Integration test cases to validate the ticket service with invalid requests",
+        "description": "",
+        "id": "ticket-service-hold-seats-function;integration-test-cases-to-validate-the-ticket-service-with-invalid-requests;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 115554205,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a Consumer of Ticket Service is making a call to test scenario \"If numSeats is zero\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "If numSeats is zero",
+                  "offset": 64
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.a_Consumer_of_Ticket_Service_is_making_a_call_to_test_scenario_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53163,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "consumer pass number of seats with value of \"0\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 45
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.consumer_pass_number_of_seats_with_value_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29872,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "consumer pass customer email address with value of \"abc1@gmail.com\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc1@gmail.com",
+                  "offset": 52
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.consumer_pass_customer_email_address_with_value_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 231021306,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "ticket service returns only status code of \"400\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.ticket_service_returns_only_status_code_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Integration test cases to validate the ticket service with invalid requests",
+        "description": "",
+        "id": "ticket-service-hold-seats-function;integration-test-cases-to-validate-the-ticket-service-with-invalid-requests;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 479479,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a Consumer of Ticket Service is making a call to test scenario \"If numSeats is negative\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "If numSeats is negative",
+                  "offset": 64
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.a_Consumer_of_Ticket_Service_is_making_a_call_to_test_scenario_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50595,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "consumer pass number of seats with value of \"-11\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "-11",
+                  "offset": 45
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.consumer_pass_number_of_seats_with_value_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63729,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "consumer pass customer email address with value of \"abc1@gmail.com\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc1@gmail.com",
+                  "offset": 52
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.consumer_pass_customer_email_address_with_value_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9904959,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "ticket service returns only status code of \"400\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.ticket_service_returns_only_status_code_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Integration test cases to validate the ticket service with invalid requests",
+        "description": "",
+        "id": "ticket-service-hold-seats-function;integration-test-cases-to-validate-the-ticket-service-with-invalid-requests;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 345289,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a Consumer of Ticket Service is making a call to test scenario \"If numSeats is \u003e 33\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "If numSeats is \u003e 33",
+                  "offset": 64
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.a_Consumer_of_Ticket_Service_is_making_a_call_to_test_scenario_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 34079,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "consumer pass number of seats with value of \"34\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "34",
+                  "offset": 45
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.consumer_pass_number_of_seats_with_value_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36456,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "consumer pass customer email address with value of \"abc1@gmail.com\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc1@gmail.com",
+                  "offset": 52
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.consumer_pass_customer_email_address_with_value_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10479520,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "ticket service returns only status code of \"400\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.ticket_service_returns_only_status_code_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Integration test cases to validate the ticket service with invalid requests",
+        "description": "",
+        "id": "ticket-service-hold-seats-function;integration-test-cases-to-validate-the-ticket-service-with-invalid-requests;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 572654,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "a Consumer of Ticket Service is making a call to test scenario \"If numSeats is 10 \u0026 valid email\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "If numSeats is 10 \u0026 valid email",
+                  "offset": 64
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.a_Consumer_of_Ticket_Service_is_making_a_call_to_test_scenario_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68385,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "consumer pass number of seats with value of \"10\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 45
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.consumer_pass_number_of_seats_with_value_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46477,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "consumer pass customer email address with value of \"abc1@gmail.com\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc1@gmail.com",
+                  "offset": 52
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.consumer_pass_customer_email_address_with_value_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74865384,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "ticket service returns only status code of \"200\" to hold seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "HoldSeatsStepDefinitions.ticket_service_returns_only_status_code_of_to_hold_seats(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ticket-service-hold-seats-function",
+    "description": "",
+    "id": "ticket-service-hold-seats-function",
+    "keyword": "Feature",
+    "uri": "src/test/resources/ticket-service-hold-seats-function.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# encoding: UTF-8"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Integration test cases to validate the ticket service with invalid requests",
+        "description": "",
+        "id": "ticket-service-reserve-seats-function;integration-test-cases-to-validate-the-ticket-service-with-invalid-requests;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 512865,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a Consumer of Ticket Service is making a call to test scenario \"If seatHoldId is zero\" to reserve seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "If seatHoldId is zero",
+                  "offset": 64
+                }
+              ],
+              "location": "ReserveSeatsStepDefinitions.a_Consumer_of_Ticket_Service_is_making_a_call_to_test_scenario_to_reserve_seats(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64055,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "consumer pass number of seats with value of \"0\" to reserve seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 45
+                }
+              ],
+              "location": "ReserveSeatsStepDefinitions.consumer_pass_number_of_seats_with_value_of_to_reserve_seats(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 45007,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "consumer pass customer email address with value of \"abc1@gmail.com\" to reserve seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc1@gmail.com",
+                  "offset": 52
+                }
+              ],
+              "location": "ReserveSeatsStepDefinitions.consumer_pass_customer_email_address_with_value_of_to_reserve_seats(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15639842,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "ticket service returns only status code of \"400\" to reserve seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "ReserveSeatsStepDefinitions.ticket_service_returns_only_status_code_of_to_reserve_seats(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Integration test cases to validate the ticket service with invalid requests",
+        "description": "",
+        "id": "ticket-service-reserve-seats-function;integration-test-cases-to-validate-the-ticket-service-with-invalid-requests;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 358540,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a Consumer of Ticket Service is making a call to test scenario \"If seatHoldId is negative\" to reserve seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "If seatHoldId is negative",
+                  "offset": 64
+                }
+              ],
+              "location": "ReserveSeatsStepDefinitions.a_Consumer_of_Ticket_Service_is_making_a_call_to_test_scenario_to_reserve_seats(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32279,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "consumer pass number of seats with value of \"-11\" to reserve seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "-11",
+                  "offset": 45
+                }
+              ],
+              "location": "ReserveSeatsStepDefinitions.consumer_pass_number_of_seats_with_value_of_to_reserve_seats(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25643,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "consumer pass customer email address with value of \"abc1@gmail.com\" to reserve seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc1@gmail.com",
+                  "offset": 52
+                }
+              ],
+              "location": "ReserveSeatsStepDefinitions.consumer_pass_customer_email_address_with_value_of_to_reserve_seats(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6727350,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "ticket service returns only status code of \"400\" to reserve seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "ReserveSeatsStepDefinitions.ticket_service_returns_only_status_code_of_to_reserve_seats(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ticket-service-reserve-seats-function",
+    "description": "",
+    "id": "ticket-service-reserve-seats-function",
+    "keyword": "Feature",
+    "uri": "src/test/resources/ticket-service-reserve-seats-function.feature"
+  }
+]
